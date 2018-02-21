@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IlexWind</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="processing.min.js" charset="utf-8"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <canvas data-processing-sources="Ilex.pde" id="poster"></canvas>
+    <div id="panel">
+        <hr>
+        <input type="radio" name="vizType" value="1" checked="checked" /> Points
+        <input type="radio" name="vizType" value="3"/> Lignes
+        <input type="radio" name="vizType" value="4"/> Piquets
+        <hr>
+         <input id="wind" type="range" min="0" max="100" step="1" value="10" />
+        <hr>
+        <input id="force" type="range" min="0" max="100" step="1" value="20" />
+        <hr>
+      <button id="savePdf">Export image</button>
+    </div>
+  </body>
+</html>
